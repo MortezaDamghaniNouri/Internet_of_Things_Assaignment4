@@ -2,6 +2,14 @@ import paho.mqtt.client as paho
 # This library is used for making directories in Windows
 import os
 
+output_file = open("E:\MyCodes\Web Codes\IoT_HW4_MQTT_Subscriber\Home_Content.txt", "wt")
+output_file.write("\n")
+output_file.close()
+
+output_file = open("E:\MyCodes\Web Codes\IoT_HW4_MQTT_Subscriber\Farm_Content.txt", "wt")
+output_file.write("\n")
+output_file.close()
+
 
 def on_subscribe(client, userdata, mid, granted_qos):
     print("Subscribed: "+str(mid)+" "+str(granted_qos))
@@ -12,10 +20,17 @@ def on_message(client, userdata, msg):
     received_payload = received_payload.rstrip("\"")
     received_payload = received_payload.lstrip("b\"")
     print("Received payload: " + received_payload)
-    # os.makedirs("c://IoT_HW4_MQTT", exist_ok=True)
-    output_file = open("E:\MyCodes\Web Codes\IoT_HW4_MQTT_Subscriber\IoT_HW4_MQTT_Received_Payload.txt", "at")
-    output_file.write(received_payload + "\n")
-    output_file.close()
+    if received_payload.find("Home") != -1:
+        output_file = open("E:\MyCodes\Web Codes\IoT_HW4_MQTT_Subscriber\Home_Content.txt", "at")
+        output_file.write(received_payload + "\n")
+        output_file.close()
+    if received_payload.find("Farm") != -1:
+        output_file = open("E:\MyCodes\Web Codes\IoT_HW4_MQTT_Subscriber\Farm_Content.txt", "at")
+        output_file.write(received_payload + "\n")
+        output_file.close()
+
+
+
 
 
 
