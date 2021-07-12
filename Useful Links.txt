@@ -1,0 +1,9 @@
+https://www.hivemq.com/blog/mqtt-client-library-paho-python/
+
+
+===========
+https://github.com/eclipse/paho.mqtt.python/
+
+
+
+==============
