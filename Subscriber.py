@@ -1,4 +1,6 @@
 import paho.mqtt.client as paho
+# This library is used for making directories in Windows
+import os
 
 
 def on_subscribe(client, userdata, mid, granted_qos):
@@ -6,7 +8,17 @@ def on_subscribe(client, userdata, mid, granted_qos):
 
 
 def on_message(client, userdata, msg):
-    print(msg.topic+" "+str(msg.qos)+" "+str(msg.payload))
+    received_payload = str(msg.payload)
+    received_payload = received_payload.rstrip("\"")
+    received_payload = received_payload.lstrip("b\"")
+    print("Received payload: " + received_payload)
+    # os.makedirs("c://IoT_HW4_MQTT", exist_ok=True)
+    output_file = open("E:\MyCodes\Web Codes\IoT_HW4_MQTT_Subscriber\IoT_HW4_MQTT_Received_Payload.txt", "at")
+    output_file.write(received_payload + "\n")
+    output_file.close()
+
+
+
 
 client = paho.Client()
 client.on_subscribe = on_subscribe

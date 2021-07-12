@@ -1,0 +1,12 @@
+<iframe src="/path_to_text_file/text.rtf" width="500" height="300" frameBorder="0">
+
+برای 
+embed 
+کردن متن از یک فایل در 
+HTML
+
+==========================
+<embed src="text.txt">
+
+
+==========================

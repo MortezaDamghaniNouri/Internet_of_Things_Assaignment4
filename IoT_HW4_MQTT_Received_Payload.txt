@@ -1,0 +1,7 @@
+{'Temperature': 12, 'Humidity': 20}
+{'Temperature': 12, 'Humidity': 20}
+Hello World
+......
+
+{'Temperature': 12, 'Humidity': 20}
+

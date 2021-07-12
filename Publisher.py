@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
 
-data = {"Temperature": 12, "Humidity": 20}
+
+
 # The callback for when the client receives a CONNACK response from the server.
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
@@ -12,6 +13,12 @@ def on_connect(client, userdata, flags, rc):
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
     print("Received message: " + msg.topic + " -> " + msg.payload.decode("utf-8"))
+
+
+# Main part of the code starts here
+
+
+data = {"Temperature": 12, "Humidity": 20}
 
 # create the client
 client = mqtt.Client()
@@ -31,6 +38,7 @@ client.connect("a014b958335a4ba195e2715edf3ee571.s2.eu.hivemq.cloud", 8883)
 client.subscribe("my/test/topic")
 
 # publish "Hello" to the topic "my/test/topic"
+
 client.publish("my/test/topic", str(data))
 
 # Blocking call that processes network traffic, dispatches callbacks and handles reconnecting.
