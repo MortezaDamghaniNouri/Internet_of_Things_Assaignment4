@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4db2cd62-69fa-4b59-9e5f-c1ab1479e081" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Farm_Publisher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Home_Publisher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COAP_Client_Farm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COAP_Client_Home.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COAP_Server.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COAP_Server_Multithread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/COAP_Subscriber.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dependencies/aiocoap-master/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exampleresources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/coap_macros.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/coap_option.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/coap_packet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/coap_reader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/coap_writer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microcoapy/microcoapy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publisher.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Subscriber.py" beforeDir="false" afterPath="$PROJECT_DIR$/Subscriber.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Useful Links.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Useful Links.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +49,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Artificial Intelligence Project2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Dependencies/microCoAPy-master" />
   </component>
-  <component name="RunManager" selected="Python.Home_Publisher (1)">
-    <configuration name="Farm_Publisher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.COAP_Client_Farm">
+    <configuration name="COAP_Client_Farm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Internet of Things HW4 (MQTT)" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +65,73 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Farm_Publisher.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COAP_Client_Farm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="COAP_Client_Home (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Internet of Things HW4 (MQTT)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COAP_Client_Home.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="COAP_Client_Home" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Internet of Things HW4 (MQTT)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\MyCodes\Python Codes\Internet of Things HW4 (MQTT)\COAP_Client_Home.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="COAP_Server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Internet of Things HW4 (MQTT)" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/COAP_Server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -84,56 +162,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Home_Publisher" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Internet of Things HW4 (MQTT)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\MyCodes\Python Codes\Internet of Things HW4 (MQTT)\Home_Publisher.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Subscriber" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Internet of Things HW4 (MQTT)" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Subscriber.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.COAP_Client_Farm" />
+        <item itemvalue="Python.COAP_Client_Home (1)" />
+        <item itemvalue="Python.COAP_Server" />
+        <item itemvalue="Python.COAP_Client_Home" />
         <item itemvalue="Python.Home_Publisher (1)" />
-        <item itemvalue="Python.Farm_Publisher" />
-        <item itemvalue="Python.Subscriber" />
-        <item itemvalue="Python.Home_Publisher" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +182,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626074197240</updated>
-      <workItem from="1626074201604" duration="21519000" />
+      <workItem from="1626074201604" duration="23183000" />
+      <workItem from="1626158246065" duration="10568000" />
     </task>
     <servers />
   </component>
@@ -158,31 +194,35 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1626096701647">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1626163463796">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1626096701647" />
-    <state width="1237" height="235" key="GridCell.Tab.0.bottom" timestamp="1626115882484">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1626163463796" />
+    <state width="1237" height="235" key="GridCell.Tab.0.bottom" timestamp="1626176889056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1626115882484" />
-    <state width="1237" height="235" key="GridCell.Tab.0.center" timestamp="1626115882484">
+    <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1626176889056" />
+    <state width="1237" height="235" key="GridCell.Tab.0.center" timestamp="1626176889056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1626115882484" />
-    <state width="1237" height="235" key="GridCell.Tab.0.left" timestamp="1626115882483">
+    <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1626176889056" />
+    <state width="1237" height="235" key="GridCell.Tab.0.left" timestamp="1626176889056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1626115882483" />
-    <state width="1237" height="235" key="GridCell.Tab.0.right" timestamp="1626115882484">
+    <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1626176889056" />
+    <state width="1237" height="235" key="GridCell.Tab.0.right" timestamp="1626176889056">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1626115882484" />
+    <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1626176889056" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$Farm_Publisher.coverage" NAME="Farm_Publisher Coverage Results" MODIFIED="1626115880381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$COAP_Client_Farm.coverage" NAME="COAP_Client_Farm Coverage Results" MODIFIED="1626176874731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$Home_Publisher__1_.coverage" NAME="Home_Publisher (1) Coverage Results" MODIFIED="1626115882467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$COAP_Client.coverage" NAME="COAP_Client Coverage Results" MODIFIED="1626172386149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$Subscriber.coverage" NAME="Subscriber Coverage Results" MODIFIED="1626115876222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$COAP_Client_Home__1_.coverage" NAME="COAP_Client_Home (1) Coverage Results" MODIFIED="1626176750753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$Publisher.coverage" NAME="Publisher Coverage Results" MODIFIED="1626113723820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Internet_of_Things_HW4__MQTT_$COAP_Server.coverage" NAME="COAP_Server Coverage Results" MODIFIED="1626176747084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

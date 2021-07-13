@@ -7,3 +7,11 @@ https://github.com/eclipse/paho.mqtt.python/
 
 
 ==============
+COAP links:
+
+https://github.com/Tanganelli/CoAPthon
+
+======
+COAP another link:
+https://github.com/chrysn/aiocoap
+=============
